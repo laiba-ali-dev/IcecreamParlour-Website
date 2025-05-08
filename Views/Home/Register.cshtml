@@ -1,0 +1,126 @@
+﻿@model ice_cream.Models.Userregister
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<style>
+    .payment-warning-box {
+        background-color: #fff3cd;
+        border: 1px solid #ffeeba;
+        color: #856404;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+        .payment-warning-box p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+</style>
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <div class="alert alert-danger" style="display:@(TempData["Error"] != null ? "block" : "none")">
+                @TempData["Error"]
+            </div>
+
+            <form asp-action="Register">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- First Name Field -->
+                <div class="mb-3 mt-2 row">
+                    <label asp-for="Firstname" class="form-label">First Name</label>
+                    <div class="">
+                        <input asp-for="Firstname" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Firstname" class="text-danger"></span>
+                </div>
+
+                <!-- Last Name Field -->
+                <div class="mb-3 row">
+                    <label asp-for="Lastname" class="form-label">Last Name</label>
+                    <div class="">
+                        <input asp-for="Lastname" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Lastname" class="text-danger"></span>
+                </div>
+
+                <!-- Phone Field -->
+                <div class="mb-3 row">
+                    <label asp-for="Phone" class="form-label">Phone</label>
+                    <div class="">
+                        <input asp-for="Phone" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="mb-3 row">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <div class="">
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+              
+
+                <!-- Password Field -->
+                <div class="mb-3 row">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <div class="">
+                        <input asp-for="Password" type="password" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+         
+                <!-- Register Button -->
+                <div class="mb-3 row">
+                    <div class="col-sm-8">
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Automatically hide the error box after 5 seconds
+        setTimeout(function () {
+            var errorBox = document.getElementById('errorBox');
+            if (errorBox) {
+                errorBox.style.display = 'none';
+            }
+        }, 5000); // 5000ms = 5 seconds
+    </script>
+
+
+    <script>
+        document.getElementById("paymentDate").addEventListener("change", function () {
+            const paymentDateInput = document.getElementById("paymentDate").value;
+            const subscriptionType = document.querySelector("select[name='SubscriptionType']").value;
+            const expiryDateInput = document.getElementById("expiryDate");
+
+            if (paymentDateInput) {
+                const paymentDate = new Date(paymentDateInput);
+                let expiryDate;
+
+                if (subscriptionType === "Monthly") {
+                    expiryDate = new Date(paymentDate.setMonth(paymentDate.getMonth() + 1));
+                } else if (subscriptionType === "Yearly") {
+                    expiryDate = new Date(paymentDate.setFullYear(paymentDate.getFullYear() + 1));
+                }
+
+                expiryDateInput.value = expiryDate.toISOString().split("T")[0]; // Format to YYYY-MM-DD
+            }
+        });
+    </script>
+}
+
+

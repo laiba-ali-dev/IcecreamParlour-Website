@@ -1,0 +1,87 @@
+﻿@model ice_cream.Models.Books
+
+@{
+    ViewData["Title"] = "EditBooks";
+    Layout = "~/Views/Shared/Admin.cshtml";
+
+}
+
+<style>
+    .card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-radius: 6px;
+    }
+
+    button.btn-primary {
+        border-radius: 6px;
+        width: 100%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-lg-6 offset-lg-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+                <h4>Edit Books</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="EditBooks" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+                    <input type="hidden" asp-for="BookId" />
+                    <!-- Name Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="Booktittle">Book Name</label>
+                        <input asp-for="Booktittle" class="form-control" id="name" placeholder="Enter Ice cream Name " />
+                    </div>
+                    <!-- Email Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="Author">Author</label>
+                        <input asp-for="Author" class="form-control" id="email" placeholder="Enter Icecream Price" />
+                    </div>
+
+                     <div class="form-group mb-3">
+                        <label asp-for="Price">Book Price</label>
+                        <input asp-for="Price" class="form-control" id="email" placeholder="Enter Icecream Price" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Stock">Stock Quantity</label>
+                        <input asp-for="Stock" class="form-control" id="email" placeholder="Enter Icecream Price" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Image"></label>
+                        <h6>Image can't be updated</h6>
+                        <input asp-for="Image" type="hidden" class="form-control" />
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+                    <!-- IsAvailable Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="IsAvailable">Is Available</label>
+                        <input asp-for="IsAvailable" type="checkbox" class="form-check-input" id="isAvailable" />
+                    </div>
+
+                    <!-- CreatedDate Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="CreatedDate">Created Date</label>
+                        <input asp-for="CreatedDate" class="form-control" readonly />
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

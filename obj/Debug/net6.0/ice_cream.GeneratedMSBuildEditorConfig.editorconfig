@@ -1,0 +1,197 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ice_cream
+build_property.RootNamespace = ice_cream
+build_property.ProjectDir = C:\Users\ONLINE LAPTOP SHOP\OneDrive\Desktop\githubmainprojects\IcecreamParlour-Website\IcecreamParlour-Website\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ONLINE LAPTOP SHOP\OneDrive\Desktop\githubmainprojects\IcecreamParlour-Website\IcecreamParlour-Website
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/AddBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/AddProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/addrec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRkcmVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/AddRecpies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUmVjcGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/AdminBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Cb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/Adminregister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5yZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/CancelledBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FuY2VsbGVkQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/CancelledIcecreams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FuY2VsbGVkSWNlY3JlYW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/contactuslist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cY29udGFjdHVzbGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/DeleteBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/DeleteProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/DeleteRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlUmVjaXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/DeliveredBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsaXZlcmVkQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/DeliveredIcecream.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsaXZlcmVkSWNlY3JlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/EditBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/EditProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/EditRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFJlY2lwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/feedbacklist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmVlZGJhY2tsaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/orderedbooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cb3JkZXJlZGJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/orderedicecreams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cb3JkZXJlZGljZWNyZWFtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/Productslist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdHNsaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/RecipeList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVjaXBlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/showrec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cc2hvd3JlYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Admin/Userlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcmxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Books.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Orderbooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlcmJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Ordericecreams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlcmljZWNyZWFtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Recipes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWNpcGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Shared/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ONLINE LAPTOP SHOP/OneDrive/Desktop/githubmainprojects/IcecreamParlour-Website/IcecreamParlour-Website/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1qka0mdryw

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ice_cream.props" />
+</Project>

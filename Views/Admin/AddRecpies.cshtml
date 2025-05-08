@@ -1,0 +1,84 @@
+﻿@model ice_cream.Models.RecipesViewModel
+@{
+    ViewData["Title"] = "AddRecpies";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+
+<style>
+    .card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-radius: 6px;
+    }
+
+    button.btn-primary {
+        border-radius: 6px;
+        width: 100%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-lg-6 offset-lg-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+                <h4>Add New Icecream</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="AddRecpies" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+                    <!-- Name Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="Recipename">Recipe Name</label>
+                        <input asp-for="Recipename" class="form-control" id="name" placeholder="Enter Recipe name " />
+                        <span asp-validation-for="Recipename" class="text-danger"></span>
+
+                    </div>
+                    <!-- Email Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="Recipedescription">Recipe Description</label>
+                        <input asp-for="Recipedescription" class="form-control" id="email" placeholder="Enter  Recipe description" />
+                        <span asp-validation-for="Recipedescription" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Recipeingredients">Recipe Ingredients</label>
+                        <input asp-for="Recipeingredients" class="form-control" id="email" placeholder="Enter Recipe ingredients" />
+                        <span asp-validation-for="Recipeingredients" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="CreatedDate" class="control-label"></label>
+                        <input asp-for="CreatedDate" class="form-control" type="date" />
+                        <span asp-validation-for="CreatedDate" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="CreatedBy">Created By</label>
+                        <input asp-for="CreatedBy" class="form-control" id="email" placeholder="Enter " />
+                        <span asp-validation-for="CreatedBy" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Photo"></label>
+                        <input asp-for="Photo" class="form-control" />
+                        <span asp-validation-for="Photo" class="text-danger"></span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

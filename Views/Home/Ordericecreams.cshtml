@@ -1,0 +1,102 @@
+﻿@model ice_cream.Models.Icecreamorder
+@{
+    ViewData["Title"] = "Ordericecreams";
+}
+
+<style>
+    .card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-radius: 6px;
+    }
+
+    button.btn-primary {
+        border-radius: 6px;
+        width: 100%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-lg-6 offset-lg-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+                <h4>Books Form</h4>
+            </div>
+            <div class="card-body">
+
+                <form asp-action="Ordericecreams" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+                    <!-- Name Field -->
+                    <!-- Name Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="Icecreamname">Icecream Name</label>
+                        <input asp-for="Icecreamname" class="form-control" readonly />
+                        <span asp-validation-for="Icecreamname" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Name">Name</label>
+                        <input asp-for="Name" class="form-control" id="name" placeholder="Enter your name " />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+
+                    </div>
+                    <!-- Email Field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="Email">Email</label>
+                        <input asp-for="Email" class="form-control" id="email" placeholder="Enter your email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Phone">Contact No.</label>
+                        <input asp-for="Phone" class="form-control" id="email" placeholder="Enter  your Contact No." />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Address">Address</label>
+                        <input asp-for="Address" class="form-control" id="email" placeholder="Enter  your Aaddress" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="TotalAmount">Total Amount</label>
+                        <input asp-for="TotalAmount" class="form-control" readonly />
+                        <span asp-validation-for="TotalAmount" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Paying">Payment Method</label>
+                        <select asp-for="Paying" class="form-control">
+                            <option value="Debit">Debit</option>
+                            <option value="Credit">Credit</option>
+                            <option value="CashOnDelivery">Cash on Delivery</option>
+                        </select>
+                        <span asp-validation-for="Paying" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Status" hidden>Status</label>
+                        <input asp-for="Status" class="form-control" readonly value="Pending" hidden />
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                    
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

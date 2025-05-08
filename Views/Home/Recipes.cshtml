@@ -1,0 +1,151 @@
+﻿@model IEnumerable<ice_cream.Models.Recipes>
+@{
+    ViewData["Title"] = "Recipes";
+}
+
+<style>
+    /* Your existing CSS styling */
+    .recipe-card {
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+        .recipe-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover img {
+            transform: scale(1.05);
+        }
+
+    .row .col-lg-4, .row .col-md-6 {
+        margin-bottom: 15px;
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #recipeImage {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .modal-body {
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    #recipeName {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    /* Styling for Ingredients */
+    .ingredients-list {
+        margin-top: 20px;
+    }
+
+    .modal-body .d-flex {
+        align-items: center; /* Vertically align the content */
+    }
+
+    .modal-body img {
+        border-radius: 10px; /* Optional: for rounded corners */
+    }
+
+</style>
+
+<!-- Header Start -->
+<div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+    <div class="container text-center py-5">
+        <h1 class="text-white display-3 mt-lg-5">Recipes</h1>
+    </div>
+</div>
+<!-- Header End -->
+<!-- Portfolio Start -->
+<div class="container-fluid py-5 px-0">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <h1 class="section-title position-relative text-center mb-5">Delicious Ice Cream Recipes</h1>
+            </div>
+        </div>
+
+        <div class="row m-0 portfolio-container">
+            @foreach (var recipe in Model)
+            {
+                <div class="col-lg-4 col-md-6 p-3 portfolio-item">
+                    <div class="recipe-card position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="~/recipeimages/@recipe.Image" alt="@recipe.Recipename"
+                             data-bs-toggle="modal" data-bs-target="#recipeModal-@recipe.RecipeId" id="img@recipe.Id">
+
+                        <!-- Portfolio Button -->
+                        <a class="portfolio-btn" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#recipeModal-@recipe.RecipeId">
+                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                        </a>
+
+                        <!-- Modal Start -->
+                        <div class="modal fade" id="recipeModal-@recipe.RecipeId" tabindex="-1" aria-labelledby="recipeModalLabel-@recipe.RecipeId" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="recipeModalLabel-@recipe.RecipeId">@recipe.Recipename</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="d-flex justify-content-between">
+                                            <!-- Image on the left side -->
+                                            <div class="col-5">
+                                                <img src="~/recipeimages/@recipe.Image" class="img-fluid w-100" alt="@recipe.Recipename">
+                                            </div>
+
+                                            <!-- Ingredients and Description on the right side -->
+                                            <div class="col-7">
+                                                <h4>Ingredients:</h4>
+                                                <p>@recipe.Recipeingredients</p>
+                                                <h4>Description:</h4>
+                                                <p>@recipe.Recipedescription</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal End -->
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Portfolio End -->
+<!-- Add jQuery and Bootstrap JS -->
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Dynamic Modal Trigger
+            $('img[data-bs-toggle="modal"]').on('click', function () {
+                var targetModalId = $(this).data('bs-target');
+                var recipeName = $(this).attr('alt');
+                var recipeDescription = $(this).siblings('p').text();
+
+                // Update Modal Content Dynamically
+                $(targetModalId + ' .modal-title').text(recipeName);
+                $(targetModalId + ' .modal-body img').attr('src', $(this).attr('src'));
+                $(targetModalId + ' .modal-body p').text(recipeDescription);
+            });
+        });
+    </script>
+}

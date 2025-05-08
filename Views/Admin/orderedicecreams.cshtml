@@ -1,0 +1,108 @@
+﻿@model IEnumerable<ice_cream.Models.Icecreamorder>
+@{
+    ViewData["Title"] = "orderedicecreams";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+
+
+
+<style>
+    .table th,
+    .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .table img {
+        border-radius: 50%;
+    }
+
+    .card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+                <h4>Icecream ordered List</h4>
+
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.IcecreamorderId)</th>
+                            <th>@Html.DisplayNameFor(model => model.Icecreamname)</th>
+                            <th>@Html.DisplayNameFor(model => model.Name) </th>
+                            <th>@Html.DisplayNameFor(model => model.Email)</th>
+                            <th>@Html.DisplayNameFor(model => model.Phone)</th>
+                            <th>@Html.DisplayNameFor(model => model.Address)</th>
+                            <th>@Html.DisplayNameFor(model => model.TotalAmount) </th>
+                            <th>@Html.DisplayNameFor(model => model.Paying)</th>
+                            
+                            <th>@Html.DisplayNameFor(model => model.Status)</th>
+                            <th>Action</th>
+
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.IcecreamorderId)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Icecreamname)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Phone)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TotalAmount)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Paying)</td>
+                                
+                                <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                                <td>
+                                    <!-- Delivered Button -->
+                                    <form asp-action="IcecreamMarkAsDelivered" method="post" class="d-inline">
+                                        <input type="hidden" name="id" value="@item.IcecreamorderId" />
+                                        <button type="submit" class="btn btn-success btn-sm">Delivered</button>
+                                    </form>
+
+                                    <!-- Cancelled Button -->
+                                    <form asp-action="IcecreamMarkAsCancelled" method="post" class="d-inline">
+                                        <input type="hidden" name="id" value="@item.IcecreamorderId" />
+                                        <button type="submit" class="btn btn-danger btn-sm">Cancelled</button>
+                                    </form>
+                                </td>
+
+
+
+
+                            </tr>
+                        }
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
